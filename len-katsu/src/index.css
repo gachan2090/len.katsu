@@ -1,9 +1,9 @@
 * {
-  background-color: rgb(225, 248, 255)
+  background-color: rgb(225, 225, 225)
 }
 
 #titleText {
-  font-size: 14;
+  font-size: 50px;
   /* line-height: 1.1; */
   color: #FFFFFF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,8 +23,8 @@
   background-color: #000000;
   height: 100%;
   border-radius: 10px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
   /* font-family: 'Courier New', Courier, monospace; */
