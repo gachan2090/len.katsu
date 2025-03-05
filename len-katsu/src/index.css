@@ -1,9 +1,16 @@
+* {
+  background-color: rgb(225, 248, 255)
+}
+
 #titleText {
   font-size: 14;
   /* line-height: 1.1; */
   color: #FFFFFF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000000;
+  font-weight: bolder;
   /* animation-name: fadeIn;
   animation-duration: 1s; */
 }
@@ -20,6 +27,7 @@
   padding-bottom: 70px;
   width: 100%;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 #timelineBase {
@@ -27,11 +35,34 @@
   height: 800px;
   position: relative;
   left: 50%;
-  margin-top: 10px;
   width: 50%;
+  padding-top: 15px;
 }
 
 #divWrapper {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+#BioImage {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#BioText {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+
+#WholeBioWrapper{
+  display: flex;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
@@ -47,6 +78,10 @@
 
 .fadeIn {
   animation: fadeIn 1s;
+}
+
+.fadeInKindaSlow {
+  animation: fadeIn 2s;
 }
 
 .fadeInSlow {
