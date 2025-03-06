@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './index.css'
-import gradPhoto from './assets/grad_photo.jpg' 
+import './index.css';
+import gradPhoto from './assets/grad_photo.jpg';
 
 function TitleBanner() {
   return <div id = "BannerContainer" class = "fadeIn">
@@ -11,9 +11,43 @@ function TitleBanner() {
     </div>
 };
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
 function VerticalLine(){
-  return <div id = "divWrapper"><div id = 'timelineBase' class = "fadeInSlow">
-  </div></div>
+  return (
+  <div id = "divWrapper">
+    <div id = 'timelineBase' class = "fadeInSlow">
+    <FadeInSection>
+      <div id="ProjectTBDBDashboard" >
+        <h1>Insert usage gif here #1</h1>
+      </div>
+    </FadeInSection>
+    <FadeInSection>
+      <div id="EMApp" >
+        <h1>Insert usage gif here #2</h1>
+      </div>
+    </FadeInSection>
+  </div>
+</div>)
 };
 
 function PersonalBio(){
@@ -36,7 +70,6 @@ function PersonalBio(){
 
     </div>
   </div>)
-
 };
 
 const container = document.getElementById('root');
