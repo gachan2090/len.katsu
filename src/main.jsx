@@ -46,10 +46,13 @@ function App() {
             <img src={gradPhoto} id="BioImage" alt="Graduation" />
           </div>
           <div id="BioTextWrapper">
+            <p id="BioTitle">
+              About me:
+              <p id="BioText">
+              My name is Garlen, and I am a Process Engineer at Intel Corporation.
+              </p>
+            </p>
             <p id="BioText">
-              Hello! My name is Garlen and I am a Process Engineer at Intel Corporation.
-              <br />
-              <br />
               Utilizing Python, SQL, and Power BI, I developed a passion for data analytics
               and data science. In my free time, I like working on other passion projects, 
               such as this project gallery built with React. Feel free to scroll and see my works!
