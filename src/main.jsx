@@ -51,6 +51,7 @@ function App() {
         </section>
 
         <section id="divWrapper">
+          <div id="timelineBase" className="fadeInSlow"></div>
           <div id="timelineLayerWrapper">
             <FadeInSection>
               <div id="timelineLayer1" className="projShowcase">
@@ -68,7 +69,6 @@ function App() {
               </div>
             </FadeInSection>
           </div>
-          <div id="timelineBase" className="fadeInSlow"></div>
         </section>
       </main>
     </div>
