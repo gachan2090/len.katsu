@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import gradPhoto from "./assets/grad_photo.jpg";
+import samplePic from "./assets/sample.png"
 
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
@@ -28,8 +29,14 @@ function App() {
     <div>
       <header id="BannerContainer" className="fadeIn">
         <h1 id="titleText">
+        ⊹₊⟡⋆
+        </h1>
+        <h1 id="titleText">
           Garlen (嘉麟) Chan's <br></br>
           Gallery
+        </h1>
+        <h1 id="titleText">
+        ⊹₊⟡⋆
         </h1>
       </header>
 
@@ -56,16 +63,19 @@ function App() {
             <FadeInSection>
               <div id="timelineLayer1" className="projShowcase">
                 <h1>.rec Reader</h1>
+                <img src={samplePic} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer2" className="projShowcase">
                 <h1>Debond Module Dashboard</h1>
+                <img src={samplePic} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer3" className="projShowcase">
                 <h1>Log File Analyzer</h1>
+                <img src={samplePic} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
           </div>
