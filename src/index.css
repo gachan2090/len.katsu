@@ -176,6 +176,10 @@ html {
   #titleText {
     font-size: 30px;
   }
+
+  html {
+    margin-right: 5px;
+  }
   
   #WholeBioWrapper {
     display: flex;
