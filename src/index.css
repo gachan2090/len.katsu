@@ -36,6 +36,21 @@ html {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
+#BioTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#BioTitle {
+  font-family: monospace;
+  text-align: left;
+  font-size: 30px;
+  /* font-style: italic; */
+  padding-right: 10px;
+  font-weight: bold;
+}
+
 #timelineBase {
   border-left: 2px solid #000000;
   height: 200%;
@@ -211,8 +226,11 @@ html {
     border: 3px solid #000000;
     width: 100%;
     background: transparent;
+    background: transparent;
     font-family: monospace;
-    display: inline-block
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
 }
