@@ -52,7 +52,7 @@ function App() {
               <br />
               Utilizing Python, SQL, and Power BI, I developed a passion for data analytics
               and data science. In my free time, I like working on other passion projects, 
-              like this project gallery built with React. Feel free to scroll and see my works!
+              such as this project gallery built with React. Feel free to scroll and see my works!
             </p>
           </div>
         </section>
