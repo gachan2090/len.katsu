@@ -90,16 +90,6 @@ html, body {
   text-justify: distribute-all-lines;
 }
 
-@keyframes fadeIn {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  } to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .fadeIn {
   animation: fadeIn 1s;
 }
@@ -133,4 +123,23 @@ html, body {
   margin-top: 10px;
   width: 47%;
   background: transparent;
+  font-family: monospace;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* media query for mobile*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }

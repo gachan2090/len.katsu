@@ -54,17 +54,17 @@ function App() {
           <div id="timelineLayerWrapper">
             <FadeInSection>
               <div id="timelineLayer1" className="projShowcase">
-                <h1>stuff1</h1>
+                <h1>.rec Reader</h1>
               </div>
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer2" className="projShowcase">
-                <h1>stuff2</h1>
+                <h1>Debond Module Dashboard</h1>
               </div>
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer3" className="projShowcase">
-                <h1>stuff3</h1>
+                <h1>Log File Analyzer</h1>
               </div>
             </FadeInSection>
           </div>
