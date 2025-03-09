@@ -3,9 +3,14 @@
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
+html, body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
 #titleText {
   font-size: 50px;
-  /* line-height: 1.1; */
+  line-height: auto;
   color: #FFFFFF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -13,69 +18,56 @@
   background-color: #000000;
   font-weight: bolder;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-  
-  /* animation-name: fadeIn;
-  animation-duration: 1s; */
 }
 
 #BannerContainer {
   position: relative;
-  margin: 0 auto;
   clear: left;
-  z-index: 0;
   background-color: #000000;
-  height: 100%;
+  /* height: 100%; */
   border-radius: 10px;
   padding-top: 80px;
   padding-bottom: 80px;
-  width: 100%;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 #timelineBase {
-  border-left: 3px solid #000000;
-  height: 2000px;
-  position: relative;
+  border-left: 2px solid #000000;
+  height: 1500px;
+  position: absolute;
   left: 50%;
-  width: 50%;
+  width: 40%;
   padding-top: 15px;
-}
-
-#ProjectTBDBDashboard {
-  border-left: 3px solid #000000;
-  border-top: 3px solid #000000;
-  border-right: 3px solid #000000;
-  border-bottom: 3px solid #000000;
-  border-radius: 10px;
-  width: 90%;
-  height: 15%;
-  margin-left: 30px;
-}
-
-#EMApp {
-  border-left: 3px solid #000000;
-  border-top: 3px solid #000000;
-  border-right: 3px solid #000000;
-  border-bottom: 3px solid #000000;
-  border-radius: 10px;
-  width: 90%;
-  height: 15%;
-  margin-left: 30px;
-  position: relative;
+  z-index: 1;
+  background-color: transparent;
 }
 
 #divWrapper {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-  padding: 10px;
+}
+
+#timelineLayerWrapper {
+  z-index: 100px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  align-items: right; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#timelineLayer2 {
+  margin-left: auto;
+  margin-right: 20px;
+  max-width: calc(100vw - 40px);
 }
 
 #BioImage {
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: 52.5vh;
   margin-top: 10px;
-  margin-bottom: 10px;
   margin-right: 10px;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
@@ -84,14 +76,18 @@
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
   font-size: 20px;
-  padding-left: 10px;
   padding-right: 10px;
   font-weight: normal;
+  line-height: 20px;
 }
 
 #WholeBioWrapper{
   display: flex;
+  flex-direction: row;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+  height: auto;
+  width: auto;
+  text-justify: distribute-all-lines;
 }
 
 @keyframes fadeIn {
@@ -118,13 +114,23 @@
 
 .fade-in-section {
   opacity: 0;
-  transform: translateY(20vh);
+  transform: translateY(30vh);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  transition: opacity 1s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
+
 .fade-in-section.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.projShowcase {
+  border-radius: 10px;
+  border: 3px solid #000000;
+  z-index: 10;
+  margin-top: 10px;
+  width: 47%;
+  background: transparent;
 }
