@@ -148,9 +148,20 @@ html {
   font-family: monospace;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* overflow: hidden */
+}
+
+.projShowcase h1 {
+  /* margin-left: 25px; */
+  /* margin-right: 10px; */
+  margin-bottom: 0px;
+}
+
+.projShowcase p {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .projShowcase img {
@@ -160,6 +171,7 @@ html {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -175,7 +187,7 @@ html {
 
 @media only screen and (max-width: 1200px) {
   #titleText {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   html {
