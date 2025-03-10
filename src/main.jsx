@@ -25,6 +25,9 @@ function FadeInSection({ children }) {
 }
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <header id="BannerContainer" className="fadeIn">
