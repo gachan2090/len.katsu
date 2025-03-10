@@ -57,6 +57,8 @@ function App() {
               and data science. In my free time, I like working on other passion projects, 
               such as this project gallery built with React. Feel free to scroll and see my works!
             </p>
+            <p id="BioText">
+            </p>
           </div>
         </section>
 
