@@ -68,17 +68,6 @@ html {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
-/* #timelineLayerWrapper {
-  z-index: 100px;
-  background-color: transparent;
-  position: absolute;
-  width: 100%;
-  align-items: right; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 #timelineLayer2 {
   margin-left: auto;
   margin-right: 0px;
@@ -187,7 +176,7 @@ html {
 
 @media only screen and (max-width: 1200px) {
   #titleText {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   html {
