@@ -66,18 +66,36 @@ function App() {
             <FadeInSection>
               <div id="timelineLayer1" className="projShowcase">
                 <h1>.rec Reader</h1>
+                <p>
+                  An intuitive GUI app built on Python's Tkinter framework
+                  that parses .rec files and analyzes the data within. The app
+                  also allows for process data visualization for deeper level
+                  toolset analysis.
+                </p>
                 <img src={samplePic} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer2" className="projShowcase">
                 <h1>Debond Module Dashboard</h1>
+                <p>
+                  A PowerBI dashboard built on uniting data from Oracle and IBM 
+                  databases for toolsets in the factory. This dashboard became a pivotal 
+                  part of our team's daily operations and promoted velocity in our 
+                  decision making. 
+                </p>
                 <img src={samplePic} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer3" className="projShowcase">
                 <h1>Log File Analyzer</h1>
+                <p>
+                  A powerful Python GUI app built on the PyQt framework, allowing
+                  for quick concatenation of wafer processing data files from toolsets
+                  in the factory and accelerated engineering investigation of quality 
+                  events.
+                </p>
                 <img src={samplePic} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
