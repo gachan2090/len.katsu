@@ -28,6 +28,7 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <header id="BannerContainer" className="fadeIn">
@@ -112,5 +113,21 @@ function App() {
 }
 
 const container = document.getElementById("root");
+container.scrollTo({
+  top: 0,
+  behavior: "instant",
+});
 const root = ReactDOM.createRoot(container);
 root.render(<App/>);
+
+// useEffect(() => {
+//   const container = document.getElementById('root');
+//   container.scrollTo({
+//     top: 0,
+//     left: 0,
+//     behavior: "instant",
+//   });
+//   const root = ReactDOM.createRoot(container);
+
+//   return() => root.render(<App/>);
+// }, []);
