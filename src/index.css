@@ -221,6 +221,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
+    gap: 20px;
   }
 
   #timelineLayer2 {
