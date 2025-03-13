@@ -76,8 +76,8 @@ function App() {
                 <h1>.rec Reader</h1>
                 <p>
                   An intuitive GUI app built on Python's Tkinter framework
-                  that parses .rec files and analyzes the data within. The app
-                  also allows for process data visualization for deeper level
+                  that strips, parses, and analyzes recorder files. The app
+                  allows for process data visualization for deeper level
                   toolset analysis.
                 </p>
                 <img src={samplePic} className="timelineImageProperties"></img>
@@ -87,10 +87,10 @@ function App() {
               <div id="timelineLayer2" className="projShowcase">
                 <h1>Debond Module Dashboard</h1>
                 <p>
-                  A PowerBI dashboard built on uniting data from Oracle and IBM 
-                  databases for toolsets in the factory. This dashboard became a pivotal 
-                  part of our team's daily operations and promoted velocity in our 
-                  decision making. 
+                  A PowerBI dashboard built on uniting large-scale manufacturing datasets
+                  from numerous databases. This dashboard became a pivotal 
+                  part of our team's daily operations, enabled better real-time insights and
+                  promoted velocity in our decision making.
                 </p>
                 <img src={samplePic} className="timelineImageProperties"></img>
               </div>
@@ -100,9 +100,8 @@ function App() {
                 <h1>Log File Analyzer</h1>
                 <p>
                   A powerful Python GUI app built on the PyQt framework, allowing
-                  for quick concatenation of wafer processing data files from toolsets
-                  in the factory and accelerated engineering investigation of quality 
-                  events.
+                  for quick concatenation of product processing data files from manufacturing
+                  toolsets, accelerating engineering investigation of quality events.
                 </p>
                 <img src={samplePic} className="timelineImageProperties"></img>
               </div>
