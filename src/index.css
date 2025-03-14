@@ -54,7 +54,7 @@ html {
 
 #timelineBase {
   border-left: 2px solid #000000;
-  height: 210%;
+  height: 220%;
   position: absolute;
   left: 50%;
   width: 40%;
@@ -137,14 +137,11 @@ html {
   font-family: monospace;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* overflow: hidden */
+  font-size: 16px;
 }
 
 .projShowcase h1 {
-  /* margin-left: 25px; */
-  /* margin-right: 10px; */
   margin-bottom: 0px;
 }
 

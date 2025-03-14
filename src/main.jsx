@@ -4,6 +4,7 @@ import "./index.css";
 import gradPhoto from "./assets/grad_photo.jpg";
 import samplePic from "./assets/sample.png"
 import recFileImage from "./assets/rec file reader.png"
+import scratchRNNImage from "./assets/scratch rnn showcase.png"
 
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
@@ -74,12 +75,12 @@ function App() {
           <div id="timelineLayerWrapper">
             <FadeInSection>
               <div id="timelineLayer1" className="projShowcase">
-                <h1>.rec Reader</h1>
+                <h1>Rec Reader</h1>
                 <p>
                   An intuitive GUI app built on Python's Tkinter framework
-                  that strips, parses, and analyzes recorder files. The app
-                  allows for process data visualization for deeper level
-                  toolset analysis.
+                  that strips, parses, and analyzes files with the .rec 
+                  extension. The app allows for process data visualization for deeper level
+                  data analysis.
                 </p>
                 <img src={recFileImage} className="timelineImageProperties"></img>
               </div>
@@ -98,13 +99,13 @@ function App() {
             </FadeInSection>
             <FadeInSection>
               <div id="timelineLayer3" className="projShowcase">
-                <h1>Log File Analyzer</h1>
+                <h1>Scratch-RNN</h1>
                 <p>
-                  A powerful Python GUI app built on the PyQt framework, allowing
-                  for quick concatenation of product processing data files from manufacturing
-                  toolsets, accelerating engineering investigation of quality events.
+                  A passion project built to challenge myself in creating my own recurrent
+                  neural network (RNN) from scratch, utilizing NumPy libraries for matrix
+                  transformations and matplotlib to visualize the fitted and predicted data.
                 </p>
-                <img src={samplePic} className="timelineImageProperties"></img>
+                <img src={scratchRNNImage} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
           </div>
