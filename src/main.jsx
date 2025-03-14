@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import gradPhoto from "./assets/grad_photo.jpg";
 import samplePic from "./assets/sample.png"
+import recFileImage from "./assets/rec file reader.png"
 
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
@@ -80,7 +81,7 @@ function App() {
                   allows for process data visualization for deeper level
                   toolset analysis.
                 </p>
-                <img src={samplePic} className="timelineImageProperties"></img>
+                <img src={recFileImage} className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
             <FadeInSection>
@@ -92,7 +93,7 @@ function App() {
                   part of our team's daily operations, enabled better real-time insights and
                   promoted velocity in our decision making.
                 </p>
-                <img src={samplePic} className="timelineImageProperties"></img>
+                <img src="https://www.clearpeaks.com/wp-content/uploads/2024/02/Integrating-Python-and-Power-BI-for-Advanced-Data-Analysis-ClearPeaks-Blog.png" className="timelineImageProperties"></img>
               </div>
             </FadeInSection>
             <FadeInSection>
