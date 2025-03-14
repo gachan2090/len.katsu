@@ -1,6 +1,5 @@
 * {
   background-color: rgb(225, 225, 225);
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
 html {
@@ -17,7 +16,6 @@ html {
   font-family: 'Courier New', Courier, monospace;
   background-color: #000000;
   font-weight: bolder;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
 #BannerContainer {
@@ -33,7 +31,6 @@ html {
   padding-bottom: 95px;
   padding-left: 80px;
   padding-right: 80px;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
 #BioTextWrapper {
@@ -64,10 +61,6 @@ html {
   margin-bottom: 15px;
 }
 
-#divWrapper {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-}
-
 #timelineLayer2 {
   margin-left: auto;
   margin-right: 0px;
@@ -80,7 +73,6 @@ html {
   height: 52.5vh;
   margin-top: 10px;
   margin-right: 10px;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
 #BioText {
@@ -95,7 +87,6 @@ html {
 #WholeBioWrapper{
   display: flex;
   flex-direction: row;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
   height: auto;
   width: auto;
   text-justify: distribute-all-lines;
@@ -233,7 +224,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
-    gap: 20px;
+    gap: 0px;
     background-color: transparent;
   }
 
@@ -243,7 +234,7 @@ html {
 
   .projShowcase {
     border-radius: 10px;
-    border: 3px solid #000000;
+    border: 2px solid #000000;
     width: 100%;
     background: transparent;
     font-family: monospace;
