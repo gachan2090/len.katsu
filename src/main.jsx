@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import gradPhoto from "./assets/grad_photo.jpg";
-import samplePic from "./assets/sample.png"
 import recFileImage from "./assets/rec file reader.png"
 import scratchRNNImage from "./assets/scratch rnn showcase.png"
 
@@ -25,6 +24,7 @@ function FadeInSection({ children }) {
     </div>
   );
 }
+
 
 function App() {
   useEffect(() => {
@@ -52,7 +52,7 @@ function App() {
         <section id="WholeBioWrapper" className="fadeInKindaSlow">
           <div id="ImageWrapper">
             <img src={gradPhoto} id="BioImage" alt="Graduation" />
-          </div>
+            </div>
           <div id="BioTextWrapper">
             <p id="BioTitle">
               About me:
@@ -122,15 +122,3 @@ container.scrollTo({
 });
 const root = ReactDOM.createRoot(container);
 root.render(<App/>);
-
-// useEffect(() => {
-//   const container = document.getElementById('root');
-//   container.scrollTo({
-//     top: 0,
-//     left: 0,
-//     behavior: "instant",
-//   });
-//   const root = ReactDOM.createRoot(container);
-
-//   return() => root.render(<App/>);
-// }, []);
