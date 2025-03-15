@@ -4,6 +4,7 @@ import "./index.css";
 import gradPhoto from "./assets/grad_photo.jpg";
 import recFileImage from "./assets/rec file reader.png"
 import scratchRNNImage from "./assets/scratch rnn showcase.png"
+import githubSVG from "./assets/github-mark.svg"
 
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
@@ -57,10 +58,10 @@ function App() {
             <p id="BioTitle">
               About me:
               <p id="BioText">
-              My name is Garlen, and I am a Process Engineer at Intel Corporation.
               </p>
             </p>
             <p id="BioText">
+              My name is Garlen, and I am a Process Engineer at Intel Corporation. <br></br><br></br>
               Utilizing Python, SQL, and Power BI, I developed a passion for data analytics
               and data science. In my free time, I like working on other passion projects, 
               such as this project gallery built with React. Feel free to scroll and see my works!
@@ -83,6 +84,9 @@ function App() {
                   data analysis.
                 </p>
                 <img src={recFileImage} className="timelineImageProperties"></img>
+                <a href="https://github.com/gachan2090/rec-reader-grapher" target="_blank">
+                  <span><img src={githubSVG} style={{display: 'inline-block', verticalAlign: 'middle', marginRight: "5px"}} width="20" height="20"></img>Github</span>
+                </a>
               </div>
             </FadeInSection>
             <FadeInSection>
@@ -106,6 +110,9 @@ function App() {
                   transformations and matplotlib to visualize the fitted and predicted data.
                 </p>
                 <img src={scratchRNNImage} className="timelineImageProperties"></img>
+                <a href="https://github.com/gachan2090/scratch-RNN" target="_blank">
+                  <span><img src={githubSVG} style={{display: 'inline-block', verticalAlign: 'middle', marginRight: "5px"}} width="20" height="20"></img>Github</span>
+                </a>
               </div>
             </FadeInSection>
           </div>
