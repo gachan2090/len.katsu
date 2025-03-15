@@ -98,7 +98,7 @@ function App() {
                   part of our team's daily operations, enabled better real-time insights and
                   promoted velocity in our decision making.
                 </p>
-                <img src="https://www.clearpeaks.com/wp-content/uploads/2024/02/Integrating-Python-and-Power-BI-for-Advanced-Data-Analysis-ClearPeaks-Blog.png" className="timelineImageProperties"></img>
+                <img src="https://www.clearpeaks.com/wp-content/uploads/2024/02/Integrating-Python-and-Power-BI-for-Advanced-Data-Analysis-ClearPeaks-Blog.png" className="timelineImageProperties" style={{marginBottom: "40px"}}></img>
               </div>
             </FadeInSection>
             <FadeInSection>
