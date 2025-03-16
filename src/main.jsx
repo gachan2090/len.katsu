@@ -5,6 +5,8 @@ import gradPhoto from "./assets/grad_photo.jpg";
 import recFileImage from "./assets/rec file reader.png"
 import scratchRNNImage from "./assets/scratch rnn showcase.png"
 import githubSVG from "./assets/github-mark.svg"
+import linkedInSVG from "./assets/linkedin.svg"
+import { motion } from "framer-motion";
 
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
@@ -14,7 +16,7 @@ function FadeInSection({ children }) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => entry.isIntersecting && setVisible(true));
     });
-    observer.observe(domRef.current);
+    observer.observe(domRef.current);   
 
     return () => observer.unobserve(domRef.current);
   }, []);
@@ -116,6 +118,38 @@ function App() {
               </div>
             </FadeInSection>
           </div>
+        </section>
+
+        <section className="BottomSection">
+          <FadeInSection>
+          <h1>Connect with me!</h1>
+          <span>
+          <motion.button id="githubLink"
+          whileHover={{scale: 0.8,
+            y: [-1, 1, -1],
+            rotate: [0, -1, -1, 0], 
+            transition: {
+            duration: 0.8,
+            repeat: Infinity, // Keeps repeating
+            repeatType: "reverse",
+          },}}
+          whileTap={{ scale: 0.9 }}>
+            <a href="https://github.com/gachan2090/" target="_blank"><img src={githubSVG}></img></a>
+          </motion.button>
+          <motion.button id="linkedIn"
+          whileHover={{scale: 0.8,
+            y: [-1, 1, -1],
+            rotate: [0, -1, -1, 0], 
+            transition: {
+            duration: 0.8,
+            repeat: Infinity, // Keeps repeating
+            repeatType: "reverse",
+          },}}
+          whileTap={{ scale: 0.9 }}>
+            <a href="https://www.linkedin.com/in/garlen-chan/" target="_blank"><img src={linkedInSVG}></img></a>
+          </motion.button>
+          </span>
+          </FadeInSection>
         </section>
       </main>
     </div>
