@@ -11,11 +11,18 @@ import { motion } from "framer-motion";
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
-
+  
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => entry.isIntersecting && setVisible(true));
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting && entry.boundingClientRect.bottom > 0) {
+          setVisible(false);
+        } else if (entry.isIntersecting) {
+          setVisible(true);
+      }
+      })
     });
+    
     observer.observe(domRef.current);   
 
     return () => observer.unobserve(domRef.current);
@@ -35,6 +42,7 @@ function App() {
       window.scrollTo(0, 0);
     }, 100);
   }, []);
+  
 
   return (
     <div>
@@ -130,7 +138,7 @@ function App() {
             rotate: [0, -1, -1, 0], 
             transition: {
             duration: 0.8,
-            repeat: Infinity, // Keeps repeating
+            repeat: Infinity,
             repeatType: "reverse",
           },}}
           whileTap={{ scale: 0.9 }}>
@@ -142,7 +150,7 @@ function App() {
             rotate: [0, -1, -1, 0], 
             transition: {
             duration: 0.8,
-            repeat: Infinity, // Keeps repeating
+            repeat: Infinity, 
             repeatType: "reverse",
           },}}
           whileTap={{ scale: 0.9 }}>
