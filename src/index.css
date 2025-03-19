@@ -56,8 +56,8 @@ html {
   left: 50%;
   width: 40%;
   padding-top: 15px;
-  z-index: 1;
-  background-color: transparent;
+  z-index: 0;
+  background-color: rgb(225, 225, 225);
   margin-bottom: 15px;
 }
 
@@ -150,21 +150,23 @@ html {
   visibility: hidden;
   transition: opacity 1s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
+  background-color: transparent;
 }
 
 .fade-in-section.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
+  background-color: transparent;
 }
 
 .projShowcase {
   border-radius: 10px;
   border: 3px solid #000000;
-  z-index: 10;
+  z-index: -2;
   margin-top: 10px;
   width: 47%;
-  background: transparent;
+  background-color: transparent;
   font-family: monospace;
   display: flex;
   flex-direction: column;
@@ -198,12 +200,15 @@ html {
 .BottomSection {
   text-align: center;
   margin-top: 30px;
+  background-color: rgb(225, 225, 225);
+  z-index: 50;
 }
 
 .BottomSection h1 {
   font-family: monospace;
   font-weight: bold;
   margin-bottom: -18px;
+  background-color: rgb(225, 225, 225);
 }
 
 

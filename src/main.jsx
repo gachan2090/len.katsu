@@ -128,8 +128,8 @@ function App() {
           </div>
         </section>
 
+        <FadeInSection>
         <section className="BottomSection">
-          <FadeInSection>
           <h1>Connect with me!</h1>
           <span>
           <motion.button id="githubLink"
@@ -157,8 +157,8 @@ function App() {
             <a href="https://www.linkedin.com/in/garlen-chan/" target="_blank"><img src={linkedInSVG}></img></a>
           </motion.button>
           </span>
-          </FadeInSection>
         </section>
+        </FadeInSection>
       </main>
     </div>
   );
