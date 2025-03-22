@@ -38,13 +38,14 @@ function FadeInSection({ children }) {
 }
 
 
+
 function App() {
+
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
   }, []);
-  
 
   return (
     <div>
@@ -73,10 +74,11 @@ function App() {
               </p>
             </p>
             <p id="BioText">
-              My name is Garlen, and I am a Process Engineer at Intel Corporation. <br></br><br></br>
-              Utilizing Python, SQL, and Power BI, I developed a passion for data analytics
-              and data science. In my free time, I like working on other passion projects, 
-              such as this project gallery built with React. Feel free to scroll and see my works!
+            My name is Garlen, and I am a Process Engineer at Intel Corporation.
+            <br/><br/>
+            Utilizing Python, SQL, and Power BI, I developed a passion for data analytics
+            and data science. In my free time, I like working on other passion projects, 
+            such as this project gallery built with React. Feel free to scroll and see my works!
             </p>
             <p id="BioText">
             </p>
@@ -166,16 +168,11 @@ function App() {
   );
 }
 
-// const container = document.getElementById('root');
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-document.getElementById('root').scrollTo({
-  top: 0,
-  behavior: "instant",
-});
-
 root.render(
 <React.StrictMode>
   <App></App>
 </React.StrictMode>
 );
+
+export default App;
