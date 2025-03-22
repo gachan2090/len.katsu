@@ -25,7 +25,9 @@ function FadeInSection({ children }) {
     
     observer.observe(domRef.current);   
 
-    return () => observer.unobserve(domRef.current);
+    return () => {
+      if (domRef.current) observer.unobserve(domRef.current);
+    }
   }, []);
 
   return (
@@ -164,10 +166,16 @@ function App() {
   );
 }
 
-const container = document.getElementById("root");
-container.scrollTo({
+// const container = document.getElementById('root');
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+document.getElementById('root').scrollTo({
   top: 0,
   behavior: "instant",
 });
-const root = ReactDOM.createRoot(container);
-root.render(<App/>);
+
+root.render(
+<React.StrictMode>
+  <App></App>
+</React.StrictMode>
+);
