@@ -163,15 +163,15 @@ html {
 .projShowcase {
   border-radius: 10px;
   border: 3px solid #000000;
-  z-index: -2;
   margin-top: 10px;
   width: 47%;
   background-color: transparent;
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 16px;
+  font-weight: normal;
 }
 
 .projShowcase h1 {
