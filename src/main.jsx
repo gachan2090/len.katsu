@@ -6,6 +6,7 @@ import recFileImage from "./assets/rec file reader.png"
 import scratchRNNImage from "./assets/scratch rnn showcase.png"
 import githubSVG from "./assets/github-mark.svg"
 import linkedInSVG from "./assets/linkedin.svg"
+import emuLogoSVG from "./assets/emu-logo.svg"
 import { motion } from "framer-motion";
 
 function FadeInSection({ children }) {
@@ -37,8 +38,6 @@ function FadeInSection({ children }) {
   );
 }
 
-
-
 function App() {
 
   useEffect(() => {
@@ -66,7 +65,7 @@ function App() {
         <section id="WholeBioWrapper" className="fadeInKindaSlow">
           <div id="ImageWrapper">
             <img src={gradPhoto} id="BioImage" alt="Graduation" />
-            </div>
+          </div>
           <div id="BioTextWrapper">
             <p id="BioTitle">
               About me:
@@ -82,6 +81,10 @@ function App() {
             </p>
             <p id="BioText">
             </p>
+          </div>
+          <div id = "EmuLogoDiv">
+            <img src={emuLogoSVG} id="EmuLogo"></img>
+            <p2>Art by Emilee Lu</p2>
           </div>
         </section>
 
