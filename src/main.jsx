@@ -84,7 +84,7 @@ function App() {
           </div>
           <div id = "EmuLogoDiv">
             <img src={emuLogoSVG} id="EmuLogo"></img>
-            <p2>Art by Emilee Lu</p2>
+            <p2>Logo by Emilee Lu</p2>
           </div>
         </section>
 

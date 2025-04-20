@@ -12,6 +12,7 @@ html {
   width: 350px;
   height: 350px;
   margin-bottom: -50px;
+  z-index: -500;
 }
 
 #EmuLogoDiv {
@@ -22,6 +23,7 @@ html {
   margin-top: -60px;
   margin-right: -50px;
   background-color: transparent;
+  
 }
 
 #titleText {
@@ -47,6 +49,7 @@ html {
   padding-bottom: 95px;
   padding-left: 80px;
   padding-right: 80px;
+  z-index: 900;
 }
 
 #BioTextWrapper {
