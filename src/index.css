@@ -25,6 +25,10 @@ html {
   background-color: transparent;
 }
 
+#EmuLogoDiv p2 {
+  display: none
+}
+
 #titleText {
   font-size: 40px;
   line-height: auto;
@@ -235,6 +239,10 @@ html {
 /* media query for mobile*/
 
 @media only screen and (max-width: 1200px) {
+
+  #EmuLogoDiv p2 {
+    display: none
+  }
   
   #EmuLogo {
     width: 250px;
