@@ -73,7 +73,7 @@ function App() {
               </p>
             </p>
             <p id="BioText">
-            My name is Garlen, and I am a Process Engineer at Intel Corporation.
+            My name is Garlen, and I will be a manufacturing engineer in analytics at Anduril Industries.
             <br/><br/>
             Utilizing Python, SQL, and Power BI, I developed a passion for data analytics
             and data science. In my free time, I like working on other passion projects, 
