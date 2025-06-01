@@ -225,6 +225,10 @@ html {
   background-color: rgb(225, 225, 225);
 }
 
+.RouterDomTest {
+  display: none;
+}
+
 
 @keyframes fadeIn {
   from {
