@@ -163,7 +163,7 @@ function App() {
           whileTap={{ scale: 0.9 }}>
             <a href="https://www.linkedin.com/in/garlen-chan/" target="_blank"><img src={linkedInSVG}></img></a>
           </motion.button>
-          <Link to="/aboutme">More</Link>
+          <Link to="/aboutme" id="RouterDomTest">More</Link>
           </span>
         </section>
         </FadeInSection>
