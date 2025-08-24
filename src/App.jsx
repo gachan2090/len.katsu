@@ -9,6 +9,7 @@ import emuLogoSVG from "./assets/emu-logo.svg"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+/*
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
@@ -170,6 +171,45 @@ function App() {
       </main>
     </div>
   );
+}
+
+export default App;
+*/
+
+let header1 = "Projects";
+let header2 = "Resume";
+let header3 = "About me";
+
+function Card(props){
+  return (
+  <div className="Card">
+    <h1 className="cardHeader">
+      {props.headers}
+    </h1>
+    <section className="cardDesc">
+      <p1>Description</p1>
+    </section>
+  </div>)
+}
+
+
+function App(){
+  useEffect(() => {
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100);
+    }, []);
+
+    return (
+    <>
+    <div className="cardWrap">
+      <Card headers={header1}/>
+      <Card headers={header2}/>
+      <Card headers={header3}/>
+    </div>
+    </>
+  );
+
 }
 
 export default App;
