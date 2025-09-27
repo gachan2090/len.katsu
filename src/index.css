@@ -13,8 +13,6 @@ body {
 .title {
   font-family: 'Courier New', Courier, monospace;
   color: white;
-  /* border-bottom: solid; */
-  /* padding-bottom: 10px; */
 }
 
 .siteStructure { /*parent container*/
@@ -42,10 +40,6 @@ body {
   box-sizing: border-box;
   margin: 7px;
   background-color: black;
-  /* height: 100%; */
-  /* grid-row: span 3; */
-  /* flex-wrap: wrap; */
-  /* border: 1px solid black; */
 }
 
 .cardWrap { /*cards container*/
@@ -54,8 +48,6 @@ body {
   gap: 10px;
   grid-column: span 3;
   grid-row: span 25;
-  /* border: 1px solid black;  */
-  /* padding: 5px; */
   height: 100%
 }
 
@@ -68,17 +60,6 @@ body {
 .cardDescription { /*card description formatting*/
   font-family: 'Courier New', Courier, monospace;
   padding-bottom: 10px;
-}
-
-.Card { /*card formatting*/
-  /* border-radius: 10px;
-  border-width: 2px;
-  border: solid #000;
-  padding: 20px;
-  box-shadow: 2px 2px;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 10px; */
 }
 
 .link-styles {
