@@ -45,7 +45,6 @@ body {
 .cardWrap { /*cards container*/
   display: flex;
   flex-direction: row;
-  gap: 10px;
   grid-column: span 3;
   grid-row: span 25;
   height: 100%
@@ -71,8 +70,13 @@ body {
   box-sizing: border-box;
   width: 100%;
   margin: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-out;
+
 }
 
 .link-styles:hover { /*card animation*/
-  box-shadow: 5px 5px rgba(0, 0, 0); 
+  box-shadow: 8px 8px rgba(0, 0, 0);
+  transform: translate(-2px, -2px);
 }

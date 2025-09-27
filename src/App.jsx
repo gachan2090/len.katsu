@@ -15,8 +15,8 @@ const header2 = "Resume 📝";
 const header3 = "About Me 😎";
 
 const text1 = "View my portfolio of projects that I have designed and contributed to throughout my extensive engineering experience, both personal and professional."
-const text2 = "Check out my resume."
-const text3 = "Learn more about my hobbies, interests, fun facts, and ambitions!"
+const text2 = "Check out my resume and learn more about my versatile breadth of knowledge in Process Engineering and Data Analytics."
+const text3 = "Learn more about my hobbies, interests, fun facts, and ambitions! Get to know my path and my fundamental building blocks."
 
 function Card(props){
   return (
