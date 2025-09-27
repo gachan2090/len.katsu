@@ -8,6 +8,7 @@ import linkedInSVG from "./assets/linkedin.svg"
 import emuLogoSVG from "./assets/emu-logo.svg"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import About from "./Subpages/aboutme.jsx"
 
 const header1 = "Projects ⚒️";
 const header2 = "Resume 📝";
@@ -46,9 +47,15 @@ function App(){
         </h1>
       </div>
       <div className="cardWrap">
-        <Card headers={header1} text={text1}/>
-        <Card headers={header2} text={text2}/>
-        <Card headers={header3} text={text3}/>
+        <Link to="/projects" className="link-styles">
+          <Card headers={header1} text={text1}/>
+        </Link>
+        <Link to="/resume" className="link-styles">
+          <Card headers={header2} text={text2}/>
+        </Link>
+        <Link to="/aboutme" className="link-styles">
+          <Card headers={header3} text={text3}/>
+        </Link>
       </div>
     </div>
     </>

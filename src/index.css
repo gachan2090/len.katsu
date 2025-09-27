@@ -51,7 +51,7 @@ body {
 .cardWrap { /*cards container*/
   display: flex;
   flex-direction: row;
-  gap: 0px;
+  gap: 10px;
   grid-column: span 3;
   grid-row: span 25;
   /* border: 1px solid black;  */
@@ -71,6 +71,17 @@ body {
 }
 
 .Card { /*card formatting*/
+  /* border-radius: 10px;
+  border-width: 2px;
+  border: solid #000;
+  padding: 20px;
+  box-shadow: 2px 2px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px; */
+}
+
+.link-styles {
   border-radius: 10px;
   border-width: 2px;
   border: solid #000;
@@ -81,6 +92,6 @@ body {
   margin: 10px;
 }
 
-.Card:hover { /*card animation*/
+.link-styles:hover { /*card animation*/
   box-shadow: 5px 5px rgba(0, 0, 0); 
 }
