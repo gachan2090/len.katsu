@@ -9,9 +9,13 @@ import emuLogoSVG from "./assets/emu-logo.svg"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-let header1 = "Projects";
-let header2 = "Resume";
-let header3 = "About me";
+const header1 = "Projects ⚒️";
+const header2 = "Resume 📝";
+const header3 = "About Me 😎";
+
+const text1 = "View my portfolio of projects that I have designed and contributed to throughout my extensive engineering experience, both personal and professional."
+const text2 = "Check out my resume."
+const text3 = "Learn more about my hobbies, interests, fun facts, and ambitions!"
 
 function Card(props){
   return (
@@ -19,12 +23,12 @@ function Card(props){
     <h1 className="cardHeader">
       {props.headers}
     </h1>
-    <section className="cardDesc">
-      <p1>Description</p1>
-    </section>
-  </div>)
+    <p className="cardDescription">
+      {props.text}
+    </p>
+  </div>
+  )
 }
-
 
 function App(){
   useEffect(() => {
@@ -35,10 +39,17 @@ function App(){
 
     return (
     <>
-    <div className="cardWrap">
-      <Card headers={header1}/>
-      <Card headers={header2}/>
-      <Card headers={header3}/>
+    <div className="siteStructure">
+      <div className="headerWrap">
+        <h1 className="title">
+          ⋆⭒˚.⋆ Garlen Chan ⋆.˚⭒⋆
+        </h1>
+      </div>
+      <div className="cardWrap">
+        <Card headers={header1} text={text1}/>
+        <Card headers={header2} text={text2}/>
+        <Card headers={header3} text={text3}/>
+      </div>
     </div>
     </>
   );
