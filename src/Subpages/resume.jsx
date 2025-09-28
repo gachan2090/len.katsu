@@ -1,10 +1,10 @@
-import {Link} from "react-router-dom";
+import myPDF from "../assets/Garlen_Chan_Resume.pdf"
+import "./resume.css"
 
 const Resume = () => {
     return (
-        <div>
-            <h1>Resume Page</h1>
-        <Link to="/">Go Home</Link>
+        <div className="siteStructureResume">
+            <iframe src={myPDF} className="resumePDF"></iframe>
         </div>
     );
 };

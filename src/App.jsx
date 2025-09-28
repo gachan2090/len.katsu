@@ -46,7 +46,7 @@ function App(){
     <div className="siteStructure">
       <div className="headerWrap">
         <h1 className="title">
-          ⋆⭒˚.⋆ Garlen Chan ⋆.˚⭒⋆
+          ⋆⭒˚.⋆ Garlen (嘉麟）Chan ⋆.˚⭒⋆
         </h1>
       </div>
       <div className="cardWrap">
