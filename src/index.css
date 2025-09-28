@@ -1,4 +1,4 @@
-html {
+/* html {
   margin: 0;
   padding: 0;  
   height: 100vh;
@@ -10,25 +10,36 @@ body {
   padding: 0;  
   min-height: 100%;
   overflow: hidden;
+} */
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
 .title {
   font-family: 'Courier New', Courier, monospace;
   color: white;
+  font-size: 2.5rem;
 }
 
 .siteStructure { /*parent container*/
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 0;      
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  margin: 0;
+  /* grid-template-columns: 3fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 99vh;
+  /* border: 1px solid black; */
 }
 
 .headerWrap { /*header section*/
   grid-column: span 3;
-  grid-row: span 4;
+  grid-row: span 1;
   justify-items: center;
   align-items: center;
   text-align: center;
@@ -49,22 +60,26 @@ body {
   display: flex;
   flex-direction: row;
   grid-column: span 3;
-  grid-row: span 25;
-  height: 100%
+  grid-row: span 5;
+  height: 100%;
+  /* border: 1px solid black; */
   
 }
 
 .cardHeader { /*card header formatting*/
   font-family: 'Courier New', Courier, monospace;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  font-size: 2.5rem;
 }
 
 .cardDescription { /*card description formatting*/
   font-family: 'Courier New', Courier, monospace;
-  padding-bottom: 10px;
+  font-size: 1rem;
+  /* padding-bottom: 10px; */
 }
 
 .link-styles {
+  position: relative;
   border-radius: 10px;
   border-width: 2px;
   border: solid #000;
@@ -77,6 +92,15 @@ body {
   text-decoration: none;
   opacity: 0;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.arrowEmote {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  /* transition: transform 0.3s ease-in-out; */
 }
 
 #projectsCard {
@@ -101,7 +125,12 @@ body {
 .link-styles:hover { /*card animation*/
   transform: translate(-3px, -3px);
   box-shadow: 8px 8px rgba(0, 0, 0);
+}
 
+.link-styles:hover .arrowEmote {
+  animation-name: MoveUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fadein {
@@ -114,4 +143,46 @@ body {
     to   { transform: translateY(0px);}
 }
 
-/* @
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Phones and small screens */
+@media (max-width: 768px) {
+  .siteStructure {
+    grid-template-columns: 1fr; /* stack everything in one column */
+    height: auto; /* allow scrolling instead of fixed height */
+    padding: 10px;
+  }
+
+  .headerWrap {
+    grid-column: span 1;
+    grid-row: auto;
+    height: auto;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .cardWrap {
+    flex-direction: column; /* stack cards vertically */
+    grid-column: span 1;
+    grid-row: auto;
+    height: auto;
+  }
+
+  .link-styles {
+    width: 100%; /* full width on small screens */
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.2rem; /* slightly smaller text on phones */
+    text-align: center;
+  }
+}

@@ -27,6 +27,9 @@ function Card(props){
     <p className="cardDescription">
       {props.text}
     </p>
+    <h1 className="arrowEmote">
+      ↘️
+    </h1>
   </div>
   )
 }
