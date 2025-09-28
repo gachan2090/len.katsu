@@ -47,13 +47,13 @@ function App(){
         </h1>
       </div>
       <div className="cardWrap">
-        <Link to="/projects" className="link-styles">
+        <Link to="/projects" className="link-styles" id="projectsCard">
           <Card headers={header1} text={text1}/>
         </Link>
-        <Link to="/resume" className="link-styles">
+        <Link to="/resume" className="link-styles" id="resumeCard">
           <Card headers={header2} text={text2}/>
         </Link>
-        <Link to="/aboutme" className="link-styles">
+        <Link to="/aboutme" className="link-styles" id="aboutMeCard">
           <Card headers={header3} text={text3}/>
         </Link>
       </div>
