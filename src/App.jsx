@@ -1,14 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./index.css";
-import gradPhoto from "./assets/grad_photo.jpg";
-import recFileImage from "./assets/rec file reader.png"
-import scratchRNNImage from "./assets/scratch rnn showcase.png"
-import githubSVG from "./assets/github-mark.svg"
-import linkedInSVG from "./assets/linkedin.svg"
-import emuLogoSVG from "./assets/emu-logo.svg"
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import About from "./Subpages/aboutme.jsx"
 
 const header1 = "Projects ⚒️";
 const header2 = "Resume 📝";
