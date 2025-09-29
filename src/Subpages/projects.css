@@ -1,0 +1,136 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  /* overflow-y: hidden; */
+}
+
+
+.cardWrap { /*cards container*/
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /* height: 100vh; */
+}
+
+.link-styles {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-width: 2px;
+  border: solid #000;
+  padding: 20px;
+  box-shadow: 6px 6px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px;
+  color: #000;
+  text-decoration: none;
+  opacity: 0;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  height: fit-content;
+}
+
+.cardHeader { /*card header formatting*/
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+
+.cardDescription { /*card description formatting*/
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  /* padding-right: 10px; */
+  /* top: 1; */
+}
+
+
+
+#projectsCard {
+  animation-name: fadein, translateUp;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 0.7s, 0.7s; /* Delay for each animation */
+  animation-fill-mode: forwards, backwards;
+}
+#resumeCard {  
+  animation-name: fadein, translateUp;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 1s, 1s; /* Delay for each animation */
+  animation-fill-mode: forwards, backwards;
+}
+#aboutMeCard {  
+  animation-name: fadein, translateUp;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 1.3s, 1.3s; /* Delay for each animation */
+  animation-fill-mode: forwards, backwards;
+}
+
+.link-styles:hover { /*card animation*/
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px rgba(0, 0, 0);
+}
+
+.link-styles:hover .arrowEmote {
+  animation-name: MoveUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes translateUp {
+    from { transform: translateY(15px); }
+    to   { transform: translateY(0px);}
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Phones and small screens */
+@media (max-width: 768px) {
+  .siteStructure {
+    grid-template-columns: 1fr; /* stack everything in one column */
+    height: auto; /* allow scrolling instead of fixed height */
+    padding: 10px;
+  }
+
+  .headerWrap {
+    grid-column: span 1;
+    grid-row: auto;
+    height: auto;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .cardWrap {
+    flex-direction: column; /* stack cards vertically */
+    grid-column: span 1;
+    grid-row: auto;
+    height: auto;
+  }
+
+  .link-styles {
+    width: 100%; /* full width on small screens */
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.2rem; /* slightly smaller text on phones */
+    text-align: center;
+  }
+}
