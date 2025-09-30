@@ -28,12 +28,13 @@ html, body {
   box-shadow: 6px 6px;
   box-sizing: border-box;
   width: 100%;
-  margin: 10px;
+  margin: 15px;
   color: #000;
   text-decoration: none;
   opacity: 0;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   height: fit-content;
+  align-items: center;
 }
 
 .header-and-image {
@@ -43,7 +44,7 @@ html, body {
 }
 
 .header-and-image img {
-  width: 60%;
+  width: 70%;
   height: auto;
   object-fit: scale-down; /* or 'contain', 'fill', 'none', 'scale-down' */
   border-radius: 10px;
@@ -53,14 +54,16 @@ html, body {
 .cardHeader-projects { /*card header formatting*/
   /* position: relative; */
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .cardDescription-projects { /*card description formatting*/
   /* position: absolute; */
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2rem;
-  margin-left: 50px;
+  font-size: 1.4rem;
+  margin-right: 40px;
+  /* margin-top: 20px; */
+  margin-left: -180px;
   /* grid-row: span 2; */
   /* padding-right: 10px; */
   /* top: 1; */
