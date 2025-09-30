@@ -7,7 +7,7 @@ html, body {
 }
 
 
-.cardWrap { /*cards container*/
+.cardWrap-projects { /*cards container*/
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -17,9 +17,10 @@ html, body {
   /* height: 100vh; */
 }
 
-.link-styles {
-  display: flex;
-  flex-direction: column;
+.link-styles-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   border-radius: 10px;
   border-width: 2px;
   border: solid #000;
@@ -35,21 +36,35 @@ html, body {
   height: fit-content;
 }
 
-.cardHeader { /*card header formatting*/
+.header-and-image {
   position: relative;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.cardDescription { /*card description formatting*/
-  position: relative;
+.header-and-image img {
+  width: 60%;
+  height: auto;
+  object-fit: scale-down; /* or 'contain', 'fill', 'none', 'scale-down' */
+  border-radius: 10px;
+  /* border-radius: 10px; */
+}
+
+.cardHeader-projects { /*card header formatting*/
+  /* position: relative; */
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+.cardDescription-projects { /*card description formatting*/
+  /* position: absolute; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  margin-left: 50px;
+  /* grid-row: span 2; */
   /* padding-right: 10px; */
   /* top: 1; */
 }
-
-
 
 #projectsCard {
   animation-name: fadein, translateUp;
@@ -57,25 +72,13 @@ html, body {
   animation-delay: 0.7s, 0.7s; /* Delay for each animation */
   animation-fill-mode: forwards, backwards;
 }
-#resumeCard {  
-  animation-name: fadein, translateUp;
-  animation-duration: 0.5s, 0.5s;
-  animation-delay: 1s, 1s; /* Delay for each animation */
-  animation-fill-mode: forwards, backwards;
-}
-#aboutMeCard {  
-  animation-name: fadein, translateUp;
-  animation-duration: 0.5s, 0.5s;
-  animation-delay: 1.3s, 1.3s; /* Delay for each animation */
-  animation-fill-mode: forwards, backwards;
-}
 
-.link-styles:hover { /*card animation*/
+.link-styles-projects:hover { /*card animation*/
   transform: translate(-3px, -3px);
   box-shadow: 11px 11px rgba(0, 0, 0);
 }
 
-.link-styles:hover .arrowEmote {
+.link-styles-projects:hover .arrowEmote {
   animation-name: MoveUpDown;
   animation-duration: 2s;
   animation-iteration-count: infinite;
