@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import React from "react";
-import Cards from "../components/Cards.jsx";
+import Cards from "../components/cards.jsx";
 import emuImage from "../assets/emu-logo.svg";
 import "./aboutme.css";
 
