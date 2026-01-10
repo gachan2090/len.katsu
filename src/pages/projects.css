@@ -103,37 +103,40 @@ html, body {
   }
 }
 
-/* Phones and small screens */
-@media (max-width: 768px) {
-  .siteStructure {
-    grid-template-columns: 1fr; /* stack everything in one column */
-    height: auto; /* allow scrolling instead of fixed height */
-    padding: 10px;
+/* Media Query for Project Cards */
+@media screen and (max-width: 768px) {
+
+  .cardWrap-projects {
+    margin: 10px; /* Reduce outer spacing */
   }
 
-  .headerWrap {
-    grid-column: span 1;
-    grid-row: auto;
-    height: auto;
-    margin: 10px 0;
+  .link-styles-projects {
+    /* Switch from 2-column grid to 1-column stack */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px; /* Tighten gap for mobile */
     padding: 15px;
+    width: 95%; /* Ensure it fits narrow screens */
   }
 
-  .cardWrap {
-    flex-direction: column; /* stack cards vertically */
-    grid-column: span 1;
-    grid-row: auto;
-    height: auto;
-  }
-
-  .link-styles {
-    width: 100%; /* full width on small screens */
-    margin: 10px 0;
-    padding: 15px;
-  }
-
-  .title {
-    font-size: 1.2rem; /* slightly smaller text on phones */
+  .header-and-image {
+    align-items: center; /* Center the project image on mobile */
     text-align: center;
+  }
+
+  .header-and-image img {
+    width: 100%; /* Make image larger on mobile screens */
+    margin-bottom: 10px;
+  }
+
+  .cardHeader-projects {
+    font-size: 1.6rem; /* Slightly smaller title */
+  }
+
+  .cardDescription-projects {
+    font-size: 1.1rem;
+    margin-left: 0;   /* CRITICAL: Remove the -180px offset */
+    margin-right: 0;  /* Reset margins for center alignment */
+    text-align: left; /* Keep text readable */
   }
 }

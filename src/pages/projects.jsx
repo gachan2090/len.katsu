@@ -38,13 +38,11 @@ function Projects() {
     return (
         <>
         <div className="cardWrap-projects">
-            <Cards link={"/"} text={"Return Home"}></Cards>
             <Cards link={debondModuleLink} headers={debondModuleHeader} text={debondModuleText} image={debondModuleImg}/>
             <Cards link={palantirFoundryLink} headers={palantirFoundryHeader} text={palantirFoundryText} image={palantirFoundryImg}/>
             <Cards link={recReaderProjectLink} headers={recReaderProjHeader} text={recReaderText} image={recReadImg}/>
             <Cards link={imageBaseLink} headers={imageBaseHeader} text={imageBaseText} image={imageBaseImg}/>
             <Cards link={rnnProjectLink} headers={rnnProjHeader} text={rnnText} image={rnnProjectImg}/>
-            <Cards link={"/"} text={"Return Home"}></Cards>
         </div>
         </>
     );

@@ -134,37 +134,53 @@ html, body {
   }
 }
 
-/* Phones and small screens */
-@media (max-width: 768px) {
+/* Media Query for Mobile and Tablets */
+@media screen and (max-width: 768px) {
+  
   .siteStructure {
-    grid-template-columns: 1fr; /* stack everything in one column */
-    height: auto; /* allow scrolling instead of fixed height */
+    /* Switch to a single column layout */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    height: auto; /* Allow the page to grow with content */
     padding: 10px;
   }
 
   .headerWrap {
     grid-column: span 1;
-    grid-row: auto;
+    margin: 5px;
     height: auto;
-    margin: 10px 0;
-    padding: 15px;
+    padding: 30px 10px;
+  }
+
+  .title {
+    font-size: 1.8rem; /* Smaller font for mobile headers */
   }
 
   .cardWrap {
-    flex-direction: column; /* stack cards vertically */
+    /* Stack cards vertically instead of horizontally */
+    flex-direction: column; 
     grid-column: span 1;
-    grid-row: auto;
     height: auto;
   }
 
   .link-styles {
-    width: 100%; /* full width on small screens */
-    margin: 10px 0;
-    padding: 15px;
+    margin: 10px 0; /* Vertical spacing between stacked cards */
+    min-height: 150px; /* Ensure cards have enough height */
   }
 
-  .title {
-    font-size: 1.2rem; /* slightly smaller text on phones */
-    text-align: center;
+  .cardHeader {
+    font-size: 1.4rem;
+  }
+
+  .cardDescription {
+    font-size: 1.0rem;
+    position: relative; /* Changing from absolute to relative helps flow on mobile */
+    margin-top: 10px;
+  }
+
+  .arrowEmote {
+    position: relative;
+    margin: 10px 0 0 0;
+    font-size: 2rem;
   }
 }
