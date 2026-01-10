@@ -1,4 +1,4 @@
-import myPDF from "../assets/Garlen_Chan_Resume-DRI8ZB52.pdf"
+import myPDF from "../assets/Garlen_Chan_Resume.pdf"
 import "./resume.css"
 
 const Resume = () => {
