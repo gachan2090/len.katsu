@@ -6,9 +6,9 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import About from "./Subpages/aboutme.jsx"
-import Projects from "./Subpages/projects.jsx"
-import Resume from "./Subpages/resume.jsx"
+import About from "./pages/aboutme.jsx"
+import Projects from "./pages/projects.jsx"
+import Resume from "./pages/resume.jsx"
 import App from "./App.jsx"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

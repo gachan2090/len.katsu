@@ -3,7 +3,10 @@ import React, { useState, useRef, useEffect } from "react";
 import rnnProjectImg from "../assets/scratch rnn showcase.png"
 import recReadImg from "../assets/rec file reader.png"
 import debondModuleImg from "../assets/powerbi burner pic.jpg"
+import palantirFoundryImg from "../assets/palantir foundry.png"
+import imageBaseImg from "../assets/ImageBase.png"
 import "./projects.css"
+import Cards from "../components/cards.jsx"
 
 const rnnProjectLink = "https://github.com/gachan2090/scratch-RNN"
 const rnnProjHeader = "ScratchRNN"
@@ -22,24 +25,8 @@ const debondModuleHeader = "Debond Dashboard"
 const debondModuleText = "Designed a centralized Power BI dashboard integrating ERP, MES, SPC, and quality systems. Delivered actionable performance metrics and quarterly trends, reducing SPC flagging by 90%, boosting equipment availability by 55%, and increasing production run rates by 50%. Resulted in $3.5M+ savings annually."
 
 const palantirFoundryLink = "https://github.com/gachan2090/scratch-RNN"
-const palantirFoundryHeader = "Palantir Foundry"
-const palantirFoundryText = "Description placeholder — will detail work with Palantir Foundry data pipelines, transformations, and integrations."
-
-function Something(props){
-    return (
-        <Link to={props.link} className="link-styles-projects" id="projectsCard">
-            <span className="header-and-image">
-                <h1 className="cardHeader-projects">
-                    {props.headers}
-                </h1>
-                <img src={props.image}></img>
-            </span>
-            <p className="cardDescription-projects">
-                {props.text}
-            </p>
-        </Link>
-        )
-}
+const palantirFoundryHeader = "Test Analytics"
+const palantirFoundryText = "Designed and implemented views quantifying key performance indicators (KPIs) for manufacturing operations using Palantir Foundry. Automated data pipelines and created interactive dashboards, enabling insights into test data and creating actionable recommendations for process changes, such as control capability (CpK) improvement and test value distribution centralization within the 3-sigma standard."
 
 function Projects() {
     useEffect(() => {
@@ -51,11 +38,13 @@ function Projects() {
     return (
         <>
         <div className="cardWrap-projects">
-            <Something link={debondModuleLink} headers={debondModuleHeader} text={debondModuleText} image={debondModuleImg}/>
-            <Something link={recReaderProjectLink} headers={recReaderProjHeader} text={recReaderText} image={recReadImg}/>
-            <Something link={imageBaseLink} headers={imageBaseHeader} text={imageBaseText} image={rnnProjectImg}/>
-            <Something link={rnnProjectLink} headers={rnnProjHeader} text={rnnText} image={rnnProjectImg}/>
-            <Something link={palantirFoundryLink} headers={palantirFoundryHeader} text={palantirFoundryText} image={rnnProjectImg}/>
+            <Cards link={"/"} text={"Return Home"}></Cards>
+            <Cards link={debondModuleLink} headers={debondModuleHeader} text={debondModuleText} image={debondModuleImg}/>
+            <Cards link={palantirFoundryLink} headers={palantirFoundryHeader} text={palantirFoundryText} image={palantirFoundryImg}/>
+            <Cards link={recReaderProjectLink} headers={recReaderProjHeader} text={recReaderText} image={recReadImg}/>
+            <Cards link={imageBaseLink} headers={imageBaseHeader} text={imageBaseText} image={imageBaseImg}/>
+            <Cards link={rnnProjectLink} headers={rnnProjHeader} text={rnnText} image={rnnProjectImg}/>
+            <Cards link={"/"} text={"Return Home"}></Cards>
         </div>
         </>
     );

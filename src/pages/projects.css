@@ -35,6 +35,7 @@ html, body {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   height: fit-content;
   align-items: center;
+  gap: 30px;
 }
 
 .header-and-image {
@@ -48,6 +49,7 @@ html, body {
   height: auto;
   object-fit: scale-down; /* or 'contain', 'fill', 'none', 'scale-down' */
   border-radius: 10px;
+  /* border: solid black 1px; */
   /* border-radius: 10px; */
 }
 
@@ -58,15 +60,10 @@ html, body {
 }
 
 .cardDescription-projects { /*card description formatting*/
-  /* position: absolute; */
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.4rem;
   margin-right: 40px;
-  /* margin-top: 20px; */
   margin-left: -180px;
-  /* grid-row: span 2; */
-  /* padding-right: 10px; */
-  /* top: 1; */
 }
 
 #projectsCard {
