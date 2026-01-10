@@ -3,74 +3,24 @@ html, body {
   width: 100%;
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
+  /* overflow-y: hidden; */
 }
 
-.siteStructure { /*parent container*/
+
+.cardWrap-projects { /*cards container*/
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /* height: 100vh; */
+}
+
+.link-styles-projects {
   display: grid;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  height: 99vh;
-}
-
-.headerWrap { /*header section*/
-  grid-column: span 3;
-  grid-row: span 1;
-  height: 90%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 10px;
-  border-width: 2px;
-  border: solid #000;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 7px;
-  background-color: black;
-  animation: fadein 0.7s, translateUp 0.7s;
-}
-
-.title {
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
-  font-size: 2.5rem;
-}
-
-.cardWrap { /*cards container*/
-  display: flex;
-  flex-direction: row;
-  grid-column: span 3;
-  grid-row: span 2;
-  height: 100%;  
-}
-
-.cardHeader { /*card header formatting*/
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2.5rem;
-}
-
-.cardDescription { /*card description formatting*/
-  position: absolute;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  padding-right: 10px;
-  top: 1;
-}
-
-.arrowEmote {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 1rem;
-  font-size: 2.5rem;
-}
-
-.link-styles {
-  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   border-radius: 10px;
   border-width: 2px;
   border: solid #000;
@@ -78,11 +28,42 @@ html, body {
   box-shadow: 6px 6px #878787;
   box-sizing: border-box;
   width: 100%;
-  margin: 10px;
+  margin: 15px;
   color: #000;
   text-decoration: none;
   opacity: 0;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  height: fit-content;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-and-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-and-image img {
+  width: 70%;
+  height: auto;
+  object-fit: scale-down; /* or 'contain', 'fill', 'none', 'scale-down' */
+  border-radius: 10px;
+  /* border: solid black 1px; */
+  /* border-radius: 10px; */
+}
+
+.cardHeader-projects { /*card header formatting*/
+  /* position: relative; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+}
+
+.cardDescription-projects { /*card description formatting*/
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem;
+  margin-right: 40px;
+  margin-left: -180px;
 }
 
 #projectsCard {
@@ -91,25 +72,13 @@ html, body {
   animation-delay: 0.7s, 0.7s; /* Delay for each animation */
   animation-fill-mode: forwards, backwards;
 }
-#resumeCard {  
-  animation-name: fadein, translateUp;
-  animation-duration: 0.5s, 0.5s;
-  animation-delay: 1s, 1s; /* Delay for each animation */
-  animation-fill-mode: forwards, backwards;
-}
-#aboutMeCard {  
-  animation-name: fadein, translateUp;
-  animation-duration: 0.5s, 0.5s;
-  animation-delay: 1.3s, 1.3s; /* Delay for each animation */
-  animation-fill-mode: forwards, backwards;
-}
 
-.link-styles:hover { /*card animation*/
+.link-styles-projects:hover { /*card animation*/
   transform: translate(-3px, -3px);
   box-shadow: 11px 11px #878787;
 }
 
-.link-styles:hover .arrowEmote {
+.link-styles-projects:hover .arrowEmote {
   animation-name: MoveUpDown;
   animation-duration: 2s;
   animation-iteration-count: infinite;
