@@ -4,7 +4,7 @@ import "../pages/projects.css"
 
 function Cards(props){
     return (
-        <Link to={props.link} className="link-styles-projects" id="projectsCard">
+        <Link to={props.link} className="link-styles-projects" id="projectsCard" target="_blank" rel="noopener noreferrer">
             <span className="header-and-image">
                 <h1 className="cardHeader-projects">
                     {props.headers}
